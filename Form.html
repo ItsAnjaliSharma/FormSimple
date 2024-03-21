@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Registration Form</title>
+</head>
+<body>
+  
+    <form>
+        <div>
+        <center><h1>Employee Registration Form</h1></center> 
+        <hr>
+        <br><br>
+        <label>Firstname:</label>
+        <input type="text" name="fname" placeholder="Firstname" required><br><br>
+        <label>Middlename:</label>
+        <input type="text" name="lname" placeholder="Middlename"><br><br>
+        <label>Lastname:</label>
+        <input type="text" name="lname" placeholder="Lastname" required><br><br>
+        </div>
+        <div>
+        <label>Department:</label>
+        <select name="Department" id="Department">
+            <option value="Department">Department</option>
+            <option value="Management">Management</option>
+            <option value="Human Resource">Human Resource</option>
+            <option value="Customer Support">Customer Support</option>
+            <option value="Development">Development</option>
+            <option value="Business">Business</option>
+            <option value="Corporate Finance">Corporate Finance</option>
+        </select>
+        </div>
+        <br><br>
+        <div>
+        <label for="Gender">Gender:</label><br>
+         <input type="radio" value="Male" name="gender">Male<br>
+         <input type="radio" value="Female" name="gender">Female<br>
+         <input type="radio" value="Others" name="gender">Others<br>
+         </div>
+         <br><br>
+         <label>Phone:</label>
+         <input type="text" name="country code" placeholder="country code" value="+91" size="2"/>
+         <input type="tel" name="phone" size="25" pattern="[0-9]{4}-[0-9]{6}" placeholder="1234-567890" required>
+         <br><br>
+         Current Address:
+         <textarea cols="80" rows="5" placeholder="Current Address" value="address" required></textarea><br><br>
+         <label for="myfile">Drop your Resume:</label>
+         <input type="file" id="myfile" required><br><br>
+         <label for="email"><strong>Email</strong></label>
+         <input type="text" placeholder="Enter Email" name="email" required><br><br>
+         <label for="password"><strong>Password</strong></label>
+         <input type="password" placeholder="Enter Password" name="password" required><br><br>
+         <label for="password"><strong> Re-enter Password</strong></label>
+         <input type="password" placeholder="Retype Password" required>
+         <br><br>
+         <button type="submit" class="registerClass">Register</button>
+    </form>
+</body>
+</html>
